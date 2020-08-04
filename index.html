@@ -1,0 +1,46 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form valdiation</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <form action="" method="post">
+        <fieldset id="signin">
+            <legend>Login</legend>
+            <label for="email">Email</label>
+            <input type="email" name="username" id="username" required aria-required="true" pattern='/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/'>
+            <label for="username">Password</label>
+            <input type="password" name="password" id="password" required aria-required="true">
+
+        </fieldset>
+        <fieldset id="signup">
+            <legend>Signup</legend>
+            <label for="fullnames">Name</label>
+            <input type="text" name="fullnames" id="fullnames" placeholder="Firstname Lastname" required aria-required="true" pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9'+">
+            <label for="email">Email</label>
+            <input type="email" name="username" id="username" required aria-required="true" pattern='/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/'>            <label for="gender">Gender</label>
+            <input type="radio" name="gender" id="gender" required aria-required="true">Male
+            <input type="radio" name="gender" id="">Female
+            <label for="languages">Languages</label> 
+            <input type="checkbox" name="lan" id="">English
+            <input type="checkbox" name="lan" id="">French
+            <input type="checkbox" name="lan" id="">Spanish
+            <input type="checkbox" name="lan" id="">German
+            <label>Date of birth</label>
+            <input type="date" name="date" id="" required aria-required="true">
+            <div id ="verify"></div>
+           
+            <input type="submit" value="Submit">
+            
+
+<script src="script.js"></script>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

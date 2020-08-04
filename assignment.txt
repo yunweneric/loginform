@@ -1,0 +1,4 @@
+Some 5 text controls include;
+
+1. Text type, Email, password, submit, radio, checkbox, dropdown-list, color, date
+2. class, ID, title, style, Dir, Lang, Src, Align, alt, href
